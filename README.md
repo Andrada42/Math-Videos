@@ -78,6 +78,28 @@ uv run manim -ql main.py CreateCircle
 
 
 
+## Setup Makefile
+
+```bash
+cd ~/bin
+which mk        # Make sure you don't have alreay an mk executable in ~/bin. If you do, use another name
+touch ~/bin/mk  # Create an executable
+
+cat << 'EOF' > ~/bin/mk
+#!/bin/bash
+PROJ=$(basename "$PWD")                                 # the last path segment = the name of the project
+MAKEFILE_DIR="$(git rev-parse --show-toplevel)/prjs"    # the absolute path to Makefile = the absolute path to the git repo /prjs
+
+make -C "$MAKEFILE_DIR" PROJ="$PROJ" "$@"
+# -C "$MAKEFILE_DIR"    = change directory to the path of the Makefile
+# PROJ="$PROJ"          = the name of the project we are currently in
+# $@ = all arguments (ex: for mk render, $@ = render)
+EOF
+
+chmod +x ~/bin/mk   # Grant permission to execute
+```
+
+
 ## Installation
 
 ```bash
