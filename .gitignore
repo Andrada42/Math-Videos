@@ -1,0 +1,12 @@
+# Virtual env (from uv)
+.venv/
+
+# Automatically generated at runtime
+__pycache__/
+media/**
+
+
+
+# Keep final videos
+!**/media/**/*.mp4
+**/media/**/partial_movie_files/
