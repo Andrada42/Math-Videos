@@ -10,3 +10,6 @@ media/**
 # Keep final videos
 !**/media/**/*.mp4
 **/media/**/partial_movie_files/
+
+# Playground
+prjs/playground
