@@ -16,6 +16,7 @@ Visual mathematical animations
 - [ ] Caesar Cipher
 - [ ] Matrix Multiplication
 - [ ] Perimeter & Area
+- [ ] Rate functions in Manim (view Manim tutorial)
 
 🟡  
 - [ ] Trigonometric Circle
