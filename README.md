@@ -9,7 +9,7 @@ Visual mathematical animations
 ## TODO - projects 🧩
 
 🟢  
-- [ ] Pi = circumference of a circle
+- [x] Pi = circumference of a circle / diameter
 - [ ] Pythagorean Theorem
 - [ ] Linear functions
 - [ ] Fibbonaci Sequence (spiral)
